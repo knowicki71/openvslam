@@ -201,6 +201,7 @@ RUN set -x && \
 COPY . /openvslam/
 WORKDIR /openvslam/
 RUN set -x && \
+  mkdir -p media && \
   mkdir -p build && \
   cd build && \
   cmake \
